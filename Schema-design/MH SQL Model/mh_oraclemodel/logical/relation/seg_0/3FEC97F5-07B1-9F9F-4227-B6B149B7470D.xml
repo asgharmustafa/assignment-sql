@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COST_CENTER_ITEM" directorySegmentName="seg_0" id="3FEC97F5-07B1-9F9F-4227-B6B149B7470D">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:42:15 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<sourcePk>72137ECF-1C1C-5940-5292-7924E785981E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>has</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1777CF73-F4F1-4B29-2E58-875FE7D88BD2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B8E651D2-7ADD-3B85-8660-4D80A3095850</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

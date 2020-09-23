@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A86B8FF8-8267-B826-2663-717081BACD97" name="PATIENT">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<generatorID>DDEDF8BE-792A-5E9B-1254-9CC6349676E1</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PatientID" id="4015C10C-784C-D935-8851-939F6F97FCBF">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>PatientID: Unique Identifier for the patient at Monash Hospital</comment>
+<generatorID>B8A813D8-FDED-361B-855C-8B7A949F0037</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<constraintName>Positive values for PatientID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="PatientID&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="Patient_Name" id="E961287F-8E56-3D3F-0B88-AAD4256ED2C6">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>Patient Name</comment>
+<generatorID>B1E012F3-AD2A-44AB-D212-0F1DC1EA4C91</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address" id="34C3453F-CACB-1993-7AA7-165923608E0B">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>Patient&apos;s Resedential Addres</comment>
+<generatorID>D3533F64-464A-A1B1-9EB4-3D8770BEB510</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date_Of_Birth" id="C0A48EDA-5730-225A-2B7C-84EBB592D839">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>Patient&apos;s Date of Birth</comment>
+<generatorID>DC7283F7-75C5-A5F9-3080-38CFE1B7272B</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Emergency_Number" id="36D11326-95B2-17A2-2902-A2B428BB7003">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>Emergency Contact Number for a Patient</comment>
+<generatorID>7CC511D1-0116-7CB4-9593-82C50BFC79F4</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AEA30F88-2F08-5C39-AEB7-E5473003990B" name="PATIENT_PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<generatorID>D561F127-53F1-006E-8FE4-6F446D64D753</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4015C10C-784C-D935-8851-939F6F97FCBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

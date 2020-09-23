@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ITEM_PROCEDURE_ADDITIONAL_ITEM" directorySegmentName="seg_0" id="158D4182-54F9-6708-45C8-3B655DA69987">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:40:08 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<sourcePk>2E8D53D9-C33A-0960-0FCA-CBB09F96E51E</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>used in</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B8E651D2-7ADD-3B85-8660-4D80A3095850</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0E903F2D-2832-A57F-CD72-841926DD108F</targetEntity>
+<transferable>true</transferable>
+</Relation>

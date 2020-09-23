@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="83719E19-D310-D7DE-A386-76224B2265B0" name="NURSE">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:22:32 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NurseID" id="94CA334F-2205-9176-CDD0-846BEC696A1A">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:23:01 UTC</createdTime>
+<comment>Unique Nurse Identifier</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<constraintName>Nurse ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="NurseID&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="First_Name" id="A66C2EB4-6B1E-212C-278C-5F7CCB97DABC">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:23:25 UTC</createdTime>
+<comment>First Name of the Nurse</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Last_Name" id="0A69C05A-7266-C172-DA15-8EFAEEC267C5">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:24:02 UTC</createdTime>
+<comment>Last Name of the Nurse </comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Contact_Phone" id="9F848FFD-FCE4-0FFC-F69E-C38B9C40554B">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:25:23 UTC</createdTime>
+<comment>Contact Number of the Nurse</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Certified_Children" id="E75935A5-0383-0A7D-9CAA-E24BEB7BD0F9">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:26:14 UTC</createdTime>
+<comment>Is the Nurse Certified to work with Children?</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2ADC6D95-F5F2-E5F1-FE5F-747DDEE46FE2" name="NURSE PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:23:21 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>94CA334F-2205-9176-CDD0-846BEC696A1A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

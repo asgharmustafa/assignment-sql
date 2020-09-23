@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1777CF73-F4F1-4B29-2E58-875FE7D88BD2" name="Cost_Center">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:39:18 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cost_Center_Code" id="7976D5C6-C9DE-A3DF-7A3E-632622D8D696">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:43:09 UTC</createdTime>
+<comment>Unique Identifier for the cost Center</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cost_Center_Title" id="917B5526-35ED-6122-1EA7-77EDFE2397D9">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:44:16 UTC</createdTime>
+<comment>Description of the  Cost center</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Manager_Name" id="4D184639-0C63-920A-B3BA-EB5885DA5EC7">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:45:00 UTC</createdTime>
+<comment>Manager of the Cost Center</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="72137ECF-1C1C-5940-5292-7924E785981E" name="Cost_Center PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 07:43:48 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7976D5C6-C9DE-A3DF-7A3E-632622D8D696</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

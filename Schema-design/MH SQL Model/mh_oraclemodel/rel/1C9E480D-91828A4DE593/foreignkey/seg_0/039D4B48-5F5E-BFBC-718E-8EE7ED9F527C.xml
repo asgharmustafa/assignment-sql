@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="039D4B48-5F5E-BFBC-718E-8EE7ED9F527C" containerWithKeyObject="FB2F5C89-C9E7-9A71-59AA-201769518EB7" localFKIndex="7953BBC8-3BF3-A6B7-4308-BAA6E20410A7" name="WARD_NURSE_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<generatorID>B958ABCD-8E6A-212F-CEF2-F9C6F6E50E58</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<referredTableLongName>WARD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F1F7D797-2FED-D3E9-F5A1-14CB58E10C23</referredTableID>
+<keyObject>AD89F688-D626-3988-EC1A-B345E30BD0B5</keyObject>
+<referredKeyID>AD89F688-D626-3988-EC1A-B345E30BD0B5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Ward_Code</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

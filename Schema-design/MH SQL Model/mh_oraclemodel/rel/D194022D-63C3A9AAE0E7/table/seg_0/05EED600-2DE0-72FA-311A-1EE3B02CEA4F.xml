@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="05EED600-2DE0-72FA-311A-1EE3B02CEA4F" name="NURSE_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<generatorID>4A3E570E-E90B-8C4D-A32E-B810014A2AC9</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nurse_AllocationID" id="15B768C2-E24C-8B9B-4063-0574C5B95C43">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>Surrogate Key for Nurse Allocation</comment>
+<generatorID>B12E1DC9-98DC-6D26-3C94-73F5D6C7914C</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="Nurse_AllocationID&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="Date_Assigned" id="1D560D44-FE5D-0DD2-A6BC-1AA7D0168310">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>Date of Ward Assigned to the Nurse</comment>
+<generatorID>EB30B942-98E8-D82D-CDFA-3E937833A454</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date_Complete" id="1BD3B94D-B9ED-AE36-F97D-04258B8EE890">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>Date the assignment was completed</comment>
+<generatorID>2EB91FC1-EF30-0366-6750-7A64ECFA79CD</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ward_Code" id="DF830CCB-42B4-1693-3488-26705196162F">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>Ward Identifier</comment>
+<generatorID>D627D81B-A6A7-2C09-D00C-BF50446D5E68</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16A53CA3-FF5A-1FA6-0790-885A67DBD8C1" referredColumn="CC1E4766-46B8-B456-6578-AA260B545080"/>
+</associations>
+</Column>
+<Column name="NurseID" id="4B7B2099-4C68-7857-5CB8-60263B68A766">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<comment>Unique Nurse Identifier</comment>
+<generatorID>205D4DD4-CB8C-AD10-0FD1-180CDC39AA1B</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7573D27-A843-0104-C09A-A05D4007D07D" referredColumn="5FE4F5EA-1698-0E28-EEC9-E6C3433A5F82"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CF92606-A2FD-1C5B-6CED-7D2BF3A2EF66" name="NURSE_ALLOCATION_PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<generatorID>4C3902F9-FFF8-009A-0674-35AEDA57BD4A</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15B768C2-E24C-8B9B-4063-0574C5B95C43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D7FC9A9-8E24-9B73-0315-EF77EB2CC45E" name="Nurse_Allocation_NK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<generatorID>B110F125-FE41-D9CB-724E-69372B059219</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D560D44-FE5D-0DD2-A6BC-1AA7D0168310"/>
+<colUsage columnID="1BD3B94D-B9ED-AE36-F97D-04258B8EE890"/>
+<colUsage columnID="4B7B2099-4C68-7857-5CB8-60263B68A766"/>
+<colUsage columnID="DF830CCB-42B4-1693-3488-26705196162F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1334924D-4E8F-FDAD-AB62-9E72763D3639" name="NURSE_NURSE_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<generatorID>872D482F-9C76-5FFB-2EB1-D191937770C7</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B7B2099-4C68-7857-5CB8-60263B68A766"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEE553CC-8D0F-4AF9-4F59-A27EEFD1FE30" name="WARD_NURSE_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 07:31:15 UTC</createdTime>
+<generatorID>B958ABCD-8E6A-212F-CEF2-F9C6F6E50E58</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF830CCB-42B4-1693-3488-26705196162F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

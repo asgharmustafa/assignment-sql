@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F6F0BEB-AA86-2C5D-748E-284C3518C4C4" name="DOCTOR">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<generatorID>BB2A3430-6F32-0857-CBD4-B2CB33F3E8C7</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DoctorID" id="997070D0-A096-3709-5BFF-80FE949652C9">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>Supervising DoctorID</comment>
+<generatorID>F5210B89-3DE4-7401-FBDC-DBE847D63BDA</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<constraintName>Doctor ID check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="DoctorID&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="Doctor_Name" id="953331DF-F2BE-B8D9-44A7-58073089E82C">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>Supervising Doctor Name</comment>
+<generatorID>3B1150DF-87BC-2D67-D876-6A1655DADD5C</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Phone_Number" id="C116ACFA-4C48-45D6-F181-FE74E6139FC0">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>Phone Number of the Supervising doctor</comment>
+<generatorID>A1910EC5-4FC7-6984-A42E-5435DF8BFC45</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1F86BBE-481C-DFEC-B3BA-1C07EF3704D7" name="DOCTOR_PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<generatorID>B8643F0A-6267-1165-DAE0-0630E28C4A1F</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="997070D0-A096-3709-5BFF-80FE949652C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

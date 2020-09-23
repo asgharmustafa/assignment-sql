@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PROCED_PATIENT_PROCED" directorySegmentName="seg_0" id="A843DFFD-533A-C82D-1153-D20B098FDBF4">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:57:06 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<sourcePk>49CFF2D2-301E-C28A-9420-FC58366E8682</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>links to</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D5E43E03-0C1E-F3FF-E0A3-B8B03BE6BD1B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>579D3AAB-DE26-9315-D300-1CCC2CDA60A7</targetEntity>
+<transferable>true</transferable>
+</Relation>

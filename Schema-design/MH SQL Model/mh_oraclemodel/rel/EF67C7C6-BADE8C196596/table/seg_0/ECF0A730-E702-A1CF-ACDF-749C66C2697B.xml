@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ECF0A730-E702-A1CF-ACDF-749C66C2697B" name="PROCEDURE">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>D5E43E03-0C1E-F3FF-E0A3-B8B03BE6BD1B</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Procedure_Code" id="76F65B72-285C-A84D-9805-1485FC73B9B7">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Unique Identifier for procedure in Hospital</comment>
+<generatorID>E78FFB16-073C-EB5E-0486-7F4D02B24253</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="Procedure_Code&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Procedure_Name" id="63AE83CB-4F06-89B6-DC28-F87E10786CB9">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Name of procedure</comment>
+<generatorID>4345A412-1208-49A9-033C-DF64052AF076</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Procedure_Charge" id="27FA23A4-76F9-D953-84DE-82877F93AE73">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Price of Procedure</comment>
+<generatorID>58106A08-2F11-44BD-96FA-E1270AE46070</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DCDD7D55-3000-1E3D-0949-F40C1B0F9542" name="PROCEDURE_PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>49CFF2D2-301E-C28A-9420-FC58366E8682</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76F65B72-285C-A84D-9805-1485FC73B9B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

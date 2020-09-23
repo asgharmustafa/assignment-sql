@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D5E43E03-0C1E-F3FF-E0A3-B8B03BE6BD1B" name="PROCEDURE">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:06:45 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Procedure_Code" id="E78FFB16-073C-EB5E-0486-7F4D02B24253">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:06:55 UTC</createdTime>
+<comment>Unique Identifier for procedure in Hospital</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="Procedure_Code&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Procedure_Name" id="4345A412-1208-49A9-033C-DF64052AF076">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:07:51 UTC</createdTime>
+<comment>Name of procedure</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Procedure_Charge" id="58106A08-2F11-44BD-96FA-E1270AE46070">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:08:24 UTC</createdTime>
+<comment>Price of Procedure</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="49CFF2D2-301E-C28A-9420-FC58366E8682" name="PROCEDURE PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:07:28 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E78FFB16-073C-EB5E-0486-7F4D02B24253</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

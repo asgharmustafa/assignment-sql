@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD90F51F-2E23-2EF6-A341-5E6F7D9A4AAE" name="NURSE_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>4A3E570E-E90B-8C4D-A32E-B810014A2AC9</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nurse_AllocationID" id="5B800357-F16B-9785-FD36-35CACA20F98F">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Surrogate Key for Nurse Allocation</comment>
+<generatorID>B12E1DC9-98DC-6D26-3C94-73F5D6C7914C</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="Date_Assigned" id="D8993CFD-1F03-529C-B208-22CBB5CA0F65">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Date of Ward Assigned to the Nurse</comment>
+<generatorID>EB30B942-98E8-D82D-CDFA-3E937833A454</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date_Complete" id="B433C5AD-562F-D1C3-62FC-EB5944FEB53D">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Date the assignment was completed</comment>
+<generatorID>2EB91FC1-EF30-0366-6750-7A64ECFA79CD</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ward_Code" id="62AD660A-8CED-7A4A-5F73-4E0216BC03C0">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Ward Identifier</comment>
+<generatorID>D627D81B-A6A7-2C09-D00C-BF50446D5E68</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88E28205-1132-A965-1062-D20A408ED6E3" referredColumn="94FB71F8-596F-1BE3-0A46-76FDB2668851"/>
+</associations>
+</Column>
+<Column name="NurseID" id="45D6372A-6881-0880-FFD6-2FE007055FD3">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Unique Nurse Identifier</comment>
+<generatorID>205D4DD4-CB8C-AD10-0FD1-180CDC39AA1B</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C0EBC45-BA60-0896-F54C-ECF9B7FF5C84" referredColumn="2B4ED211-6FC7-4887-6E10-B67C6D239323"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="60E14CC3-00D0-F726-F5CE-9B6818ECD79B" name="NURSE_ALLOCATION_PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>4C3902F9-FFF8-009A-0674-35AEDA57BD4A</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B800357-F16B-9785-FD36-35CACA20F98F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFEFD796-9EFC-F81D-0BB3-D4261C24F1A4" name="Nurse_Allocation_NK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>B110F125-FE41-D9CB-724E-69372B059219</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8993CFD-1F03-529C-B208-22CBB5CA0F65"/>
+<colUsage columnID="B433C5AD-562F-D1C3-62FC-EB5944FEB53D"/>
+<colUsage columnID="45D6372A-6881-0880-FFD6-2FE007055FD3"/>
+<colUsage columnID="62AD660A-8CED-7A4A-5F73-4E0216BC03C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADBB2A93-6319-0278-6BE2-F7BE7A0F902B" name="NURSE_NURSE_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>872D482F-9C76-5FFB-2EB1-D191937770C7</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45D6372A-6881-0880-FFD6-2FE007055FD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D9332DF-D5F8-A03E-A04E-5325D92DA9C4" name="WARD_NURSE_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>B958ABCD-8E6A-212F-CEF2-F9C6F6E50E58</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62AD660A-8CED-7A4A-5F73-4E0216BC03C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

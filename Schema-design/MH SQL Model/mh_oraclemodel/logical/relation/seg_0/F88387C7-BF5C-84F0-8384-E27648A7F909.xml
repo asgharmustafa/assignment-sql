@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SPEC_DOC_SPEC" directorySegmentName="seg_0" id="F88387C7-BF5C-84F0-8384-E27648A7F909">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:24:20 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="true"/>
+</engineerTo>
+<sourcePk>C1DAFAA9-101B-BDD0-F19F-DDF993821173</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>hold by</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1AA3B06C-8B89-BCD9-7AA8-80F17C8D9BBD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F49803BF-A373-F5A2-B758-F776DF27D9A9</targetEntity>
+<transferable>true</transferable>
+</Relation>

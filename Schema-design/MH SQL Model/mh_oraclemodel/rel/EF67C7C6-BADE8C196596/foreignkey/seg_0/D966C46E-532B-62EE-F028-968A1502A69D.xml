@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D966C46E-532B-62EE-F028-968A1502A69D" containerWithKeyObject="184112D5-81F9-F3F9-7BA2-73D0A0F5650C" localFKIndex="0CF393F5-8C85-9846-EE82-6301F90F699E" name="ADMIT_PATIENT_PROCED">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>DD723CE7-DE60-796F-4FE0-887F0354C6FA</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<referredTableLongName>ADMISSION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>732C33F3-EB8D-BDAF-32BE-ABBE7DA35122</referredTableID>
+<keyObject>DEA6FD06-7396-EA0A-F72D-90B974D6672A</keyObject>
+<referredKeyID>DEA6FD06-7396-EA0A-F72D-90B974D6672A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Date_Time_Admission,PatientID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

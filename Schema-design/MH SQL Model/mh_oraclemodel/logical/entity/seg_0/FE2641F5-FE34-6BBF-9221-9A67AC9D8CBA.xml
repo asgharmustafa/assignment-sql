@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE2641F5-FE34-6BBF-9221-9A67AC9D8CBA" name="PERFORMING_DOCTOR">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:14:09 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="1C9E480D-058E-0A61-9B23-91828A4DE593" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Performing_DoctorID" id="B57ACECF-E903-3ED3-C3F8-97D258DCCAFD">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:14:43 UTC</createdTime>
+<comment>Performing Doctor ID</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="1C9E480D-058E-0A61-9B23-91828A4DE593" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Performing_Doctor_Name" id="37000348-D36E-6FB3-22ED-BC0683ECF402">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:15:12 UTC</createdTime>
+<comment>Name of Performing Doctor or the Doctor Incharge</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="1C9E480D-058E-0A61-9B23-91828A4DE593" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3CA0C4E9-B3CE-063C-C7EC-57A656119416" name="Performing_Doctor PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:15:11 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="1C9E480D-058E-0A61-9B23-91828A4DE593" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B57ACECF-E903-3ED3-C3F8-97D258DCCAFD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

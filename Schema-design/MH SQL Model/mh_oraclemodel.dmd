@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="mh_oraclemodel" id="66859FF4-F2F5-227E-3089-BF82620D5824" version="3.5">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 03:43:35 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>66859FF4-F2F5-227E-3089-BF82620D5824</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="66859FF4-F2F5-227E-3089-BF82620D5824">
+<designStoragePath>F:\GIT Clone\amus0006\Assignments\Ass1B\MH SQL Model\mh_oraclemodel</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

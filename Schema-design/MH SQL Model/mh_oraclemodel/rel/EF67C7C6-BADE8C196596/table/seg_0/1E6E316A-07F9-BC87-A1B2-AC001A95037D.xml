@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E6E316A-07F9-BC87-A1B2-AC001A95037D" name="BED_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>91E146F8-914E-EF0F-8D21-0AA9115D7B5D</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Bed_AllocationID" id="B45D5D3C-B208-7344-B6E0-4EF9EFEB71A6">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Surrogate key for Bed Allocation</comment>
+<generatorID>E5E6EB78-0C81-8276-F863-12EC465CA2CE</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="Date_Time_Allocation" id="3761170E-DE77-B635-AF12-A6241DF3E531">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Date and Time of Bed Allocation to the Patient</comment>
+<generatorID>0684446B-F357-CE8C-C630-6AC46BD972B9</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bed_No" id="D0AB0F13-A778-61E8-BFBA-BFF6FF2B987C">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Bed Number in a given ward</comment>
+<generatorID>7D80BBDE-E9A8-6B2A-039A-E5B87B11F19F</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92B9B88C-D771-784B-A105-B3851D5A8FF6" referredColumn="19E0945A-4776-844B-92CC-827860154581"/>
+</associations>
+</Column>
+<Column name="Ward_Code" id="27EA7CFF-FF4A-EE8A-14F8-D4638BA464AA">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Ward Identifier</comment>
+<generatorID>9E4FAE5F-709C-1869-AFD7-ADE9F7BD4514</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92B9B88C-D771-784B-A105-B3851D5A8FF6" referredColumn="395D7EED-C5B5-8F98-4B86-055460C7FCB8"/>
+</associations>
+</Column>
+<Column name="Date_Time_Admission" id="3D75E6F2-566F-04E0-87B2-DA144E77A36C">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Date and Time the Patient is Admitted</comment>
+<generatorID>79AD402E-2E70-D21B-DDF0-A389D2398772</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D55B5323-B55A-FD45-511B-36DADFEFE10F" referredColumn="50480F02-8FBB-AED2-93CC-E59D13553922"/>
+</associations>
+</Column>
+<Column name="PatientID" id="1CA599A5-CC7E-78AB-DC87-AB5DF57A6D9C">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>PatientID: Unique Identifier for the patient at Monash Hospital</comment>
+<generatorID>FCA35A59-9132-1119-4C91-B406D5657BB6</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D55B5323-B55A-FD45-511B-36DADFEFE10F" referredColumn="5C50BBE0-FEEC-F9F6-40CE-3F579F570745"/>
+</associations>
+</Column>
+<Column name="Date_Time_Allocation_End" id="8E8F5054-9E7D-04CE-6479-6B9A6E31C06E">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Date and Time of Bed Allocation end for a given Bed allocation</comment>
+<generatorID>67CA0161-DF5E-381D-F7DD-51510CAF9784</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9865C26B-F73E-3C41-6826-93B98C16506C" name="BED_ALLOCATION_PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>C9CD19F6-3B57-F317-7697-56299D18E907</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B45D5D3C-B208-7344-B6E0-4EF9EFEB71A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CF299B6-CBC5-778D-5F3A-1CB3B49A9A9A" name="BED_ALLOCATION_NK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>A62DB8CD-5F4F-1C44-E2DC-0F0B4FCB1E59</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D75E6F2-566F-04E0-87B2-DA144E77A36C"/>
+<colUsage columnID="1CA599A5-CC7E-78AB-DC87-AB5DF57A6D9C"/>
+<colUsage columnID="D0AB0F13-A778-61E8-BFBA-BFF6FF2B987C"/>
+<colUsage columnID="27EA7CFF-FF4A-EE8A-14F8-D4638BA464AA"/>
+<colUsage columnID="3761170E-DE77-B635-AF12-A6241DF3E531"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6074AC29-48A2-515F-8487-F50F987D80E2" name="ADMISSION_BED_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>0580C4A8-3672-F8C7-FD12-9D911843A350</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D75E6F2-566F-04E0-87B2-DA144E77A36C"/>
+<colUsage columnID="1CA599A5-CC7E-78AB-DC87-AB5DF57A6D9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25070C21-8A86-1636-6AA0-61B513E0DFA6" name="BED_BED_ALLOCATION">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>BB88A149-90D4-4E4F-24E6-F8022EFB7631</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0AB0F13-A778-61E8-BFBA-BFF6FF2B987C"/>
+<colUsage columnID="27EA7CFF-FF4A-EE8A-14F8-D4638BA464AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

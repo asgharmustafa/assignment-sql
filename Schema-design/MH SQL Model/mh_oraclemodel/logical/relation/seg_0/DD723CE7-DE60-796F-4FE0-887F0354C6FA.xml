@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ADMIT_PATIENT_PROCED" directorySegmentName="seg_0" id="DD723CE7-DE60-796F-4FE0-887F0354C6FA">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:54:09 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<sourcePk>E4180027-2F2E-2CDE-4EE4-5B5BF47DC0AF</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>may have</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>30EC3D07-C906-B8BC-6D79-49F470BA4904</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>579D3AAB-DE26-9315-D300-1CCC2CDA60A7</targetEntity>
+<transferable>true</transferable>
+</Relation>

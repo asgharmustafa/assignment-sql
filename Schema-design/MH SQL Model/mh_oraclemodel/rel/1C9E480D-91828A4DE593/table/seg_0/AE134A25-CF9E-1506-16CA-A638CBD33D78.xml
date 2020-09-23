@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE134A25-CF9E-1506-16CA-A638CBD33D78" name="PATIENT_PRES_PROCED">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<generatorID>579D3AAB-DE26-9315-D300-1CCC2CDA60A7</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PatientID" id="8C200A8C-B77F-5D07-FCA0-0EED3B12DB52">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>PatientID: Unique Identifier for the patient at Monash Hospital</comment>
+<generatorID>58138605-A4D9-4C9F-6589-1C3A86EC7AC9</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE32E760-5E45-2F63-4DE7-83AA6286246B" referredColumn="203EA0EF-A217-2B30-2670-FC11A19C8454"/>
+</associations>
+</Column>
+<Column name="Date_Time_Admission" id="6647BA82-B176-18CF-90A3-B9F9D1F626C6">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>Date and Time the Patient is Admitted</comment>
+<generatorID>8E26EC10-81B1-B7F4-6EB2-4DED02236B86</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE32E760-5E45-2F63-4DE7-83AA6286246B" referredColumn="666715F6-23E7-5384-7188-8B32A60AC473"/>
+</associations>
+</Column>
+<Column name="Procedure_Code" id="2FE26D91-9104-B1AE-48EF-B51ACD0BF5CE">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>Unique Identifier for procedure in Hospital</comment>
+<generatorID>F8F41D8F-2A7E-0C67-330B-EE592F0E3FA1</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49ED8D6E-E57E-5127-C47E-1E1408FEA306" referredColumn="C8A8F931-0B90-FA35-8516-A7D555D09D4F"/>
+</associations>
+</Column>
+<Column name="Requested_DoctorID" id="991DD004-185F-D63E-6BCF-52402EE9A0D2">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>Doctor ID of the Prescribing Doctor</comment>
+<generatorID>EA837ED3-C085-6F97-A259-789A9A2FAB18</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDC019DF-2CAE-B7BC-0246-1597C721FA47" referredColumn="2861AC41-E540-6754-9525-E7EA3184A958"/>
+</associations>
+</Column>
+<Column name="Performing_DoctorID" id="6BE94EB4-E7CD-64A2-7076-53A9BE92FAC0">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>Performing Doctor ID</comment>
+<generatorID>E260E021-FD20-5520-9D21-EB19CE7BB376</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E28316A6-9A40-0936-1D7F-B808C2CFE0D5" referredColumn="6E403261-9124-A8BD-629F-4F5EC2C39846"/>
+</associations>
+</Column>
+<Column name="Date_Time_Procedure" id="EBDE1C54-9923-BDE7-D594-92CDD9B93A69">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>Date and Time when the procedure is scheduled</comment>
+<generatorID>D9363F92-CF46-A7F9-59F4-7209ED196EE2</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Total_Extra_Charges" id="1EACD66D-C2E2-3DCC-9F53-E33B693DD9A8">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<comment>Total Extra charges on the procedure for the Patient</comment>
+<generatorID>B520FBFE-B870-00A7-13FC-D6DA25F9C7F0</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A527BD60-635E-29B6-EBF6-E08167994D38" name="PATIENT_PRES_PROCED_PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<generatorID>F4E0ADDB-F29B-E3F1-D57C-D9351FA84F15</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6647BA82-B176-18CF-90A3-B9F9D1F626C6"/>
+<colUsage columnID="8C200A8C-B77F-5D07-FCA0-0EED3B12DB52"/>
+<colUsage columnID="2FE26D91-9104-B1AE-48EF-B51ACD0BF5CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="658D6083-2B49-8754-D7E5-6AB47017C195" name="ADMIT_PATIENT_PROCED">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<generatorID>DD723CE7-DE60-796F-4FE0-887F0354C6FA</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6647BA82-B176-18CF-90A3-B9F9D1F626C6"/>
+<colUsage columnID="8C200A8C-B77F-5D07-FCA0-0EED3B12DB52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91180CCE-8B04-3916-82E7-E587FA4E2490" name="PERF_DOC_PROCED">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<generatorID>92570C99-DDB7-8820-5B68-8E19749E8466</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BE94EB4-E7CD-64A2-7076-53A9BE92FAC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9E9C3DD-AD4A-7AAB-874C-17F855AB5267" name="PREC_DOC_PROCED">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<generatorID>D4C68A41-5EA1-301D-73BF-E5C58DBE5071</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="991DD004-185F-D63E-6BCF-52402EE9A0D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82F5E9CD-C2B5-3BE1-A0DA-0278B344B3A8" name="PROCED_PATIENT_PROCED">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:04:54 UTC</createdTime>
+<generatorID>A843DFFD-533A-C82D-1153-D20B098FDBF4</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FE26D91-9104-B1AE-48EF-B51ACD0BF5CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

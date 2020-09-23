@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E903F2D-2832-A57F-CD72-841926DD108F" name="PROCEDURE_ADDITIONAL_ITEM">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:34:58 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Item_Code" id="2CDFC4D0-C74F-3427-6233-2A603B1160EB">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:40:08 UTC</createdTime>
+<comment>Unique identifier of &quot;extra&quot; items in the procedure</comment>
+<generatorID>158D4182-54F9-6708-45C8-3B655DA69987</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<referedAttribute>E1F61329-E4A9-0143-633B-6ED29EFB0CBD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Patient_presID" id="3429B817-B377-3FB7-9901-178E22595DF4">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:58:35 UTC</createdTime>
+<comment>surrogate key for Patient Prescription</comment>
+<generatorID>8A8AA741-8065-CDCB-11E6-647C4DD380BE</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<referedAttribute>18200DEE-2201-819A-7E35-2911DB6574D8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Quantity" id="6E0C0B19-5B3C-6C06-D055-B492A33EE818">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:36:34 UTC</createdTime>
+<comment>Quantity of Item used in the given procedure</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Total_Item_Charge" id="9E4BA8FE-386C-F9A4-0623-52175F2FF1F7">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:37:06 UTC</createdTime>
+<comment>Charge of Item used in the the procedure</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4F9A7CE4-5506-2F0F-5A4F-690519AEECD6" name="PROCEDURE_ADDITIONAL_ITEM PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:38:22 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2CDFC4D0-C74F-3427-6233-2A603B1160EB</attributeRef>
+<attributeRef>3429B817-B377-3FB7-9901-178E22595DF4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

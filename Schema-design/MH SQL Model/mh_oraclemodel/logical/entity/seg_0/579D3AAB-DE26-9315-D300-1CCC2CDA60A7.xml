@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="579D3AAB-DE26-9315-D300-1CCC2CDA60A7" name="PATIENT_PRES_PROCED">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:51:26 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Patient_presID" id="18200DEE-2201-819A-7E35-2911DB6574D8">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:58:02 UTC</createdTime>
+<comment>surrogate key for Patient Prescription</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="Patient_presID&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PatientID" id="58138605-A4D9-4C9F-6589-1C3A86EC7AC9">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:54:09 UTC</createdTime>
+<comment>PatientID: Unique Identifier for the patient at Monash Hospital</comment>
+<generatorID>DD723CE7-DE60-796F-4FE0-887F0354C6FA</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<referedAttribute>23701E2E-0DCF-9F77-9B92-7F64B9764BC3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date_Time_Admission" id="8E26EC10-81B1-B7F4-6EB2-4DED02236B86">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:54:09 UTC</createdTime>
+<comment>Date and Time the Patient is Admitted</comment>
+<generatorID>DD723CE7-DE60-796F-4FE0-887F0354C6FA</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<referedAttribute>D248CF9A-DF70-7D48-18C6-D3DF9E860C42</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Procedure_Code" id="F8F41D8F-2A7E-0C67-330B-EE592F0E3FA1">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:57:06 UTC</createdTime>
+<comment>Unique Identifier for procedure in Hospital</comment>
+<generatorID>A843DFFD-533A-C82D-1153-D20B098FDBF4</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<referedAttribute>E78FFB16-073C-EB5E-0486-7F4D02B24253</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Requested_DoctorID" id="EA837ED3-C085-6F97-A259-789A9A2FAB18">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:56:29 UTC</createdTime>
+<comment>Doctor ID of the Prescribing Doctor</comment>
+<generatorID>D4C68A41-5EA1-301D-73BF-E5C58DBE5071</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<referedAttribute>79967792-31AF-FD1D-AAE0-F88B0AD5111E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Performing_DoctorID" id="E260E021-FD20-5520-9D21-EB19CE7BB376">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:58:19 UTC</createdTime>
+<comment>Performing Doctor ID</comment>
+<generatorID>92570C99-DDB7-8820-5B68-8E19749E8466</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<referedAttribute>B57ACECF-E903-3ED3-C3F8-97D258DCCAFD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date_Time_Procedure" id="D9363F92-CF46-A7F9-59F4-7209ED196EE2">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:51:55 UTC</createdTime>
+<comment>Date and Time when the procedure is scheduled</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4E0ADDB-F29B-E3F1-D57C-D9351FA84F15" name="PATIENT_PRES_PROCED PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 04:54:09 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>18200DEE-2201-819A-7E35-2911DB6574D8</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="54E317E7-16DA-E453-9550-86467A5A2505" name="PATIENT_PRES_PROCED NK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-28 05:59:01 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="D194022D-20A6-5BE0-656C-63C3A9AAE0E7" value="true"/>
+</engineerTo>
+<newElementsIDs>A843DFFD-533A-C82D-1153-D20B098FDBF4,DD723CE7-DE60-796F-4FE0-887F0354C6FA</newElementsIDs>
+<usedAttributes>
+<attributeRef>F8F41D8F-2A7E-0C67-330B-EE592F0E3FA1</attributeRef>
+<attributeRef>8E26EC10-81B1-B7F4-6EB2-4DED02236B86</attributeRef>
+<attributeRef>58138605-A4D9-4C9F-6589-1C3A86EC7AC9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

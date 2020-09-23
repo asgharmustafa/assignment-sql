@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A410592F-0913-4ABB-1663-EC7F8A219FF7" name="BED">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>BA745124-E416-798C-2093-B17C292B2EA4</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Bed_No" id="19E0945A-4776-844B-92CC-827860154581">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Bed Number in a given ward</comment>
+<generatorID>3F954957-F719-9C3E-F4FF-EF32ADEAD984</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="Bed_No&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ward_Code" id="395D7EED-C5B5-8F98-4B86-055460C7FCB8">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Ward Identifier</comment>
+<generatorID>58D2ADEE-7E6C-A7B5-D410-07F798A083B6</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3BA89C9-44E5-0B12-B573-68EF9C4556D3" referredColumn="94FB71F8-596F-1BE3-0A46-76FDB2668851"/>
+</associations>
+</Column>
+<Column name="Bed_Telephone_No_" id="3C5937D9-B5AB-F4A4-0261-3D9CE9132A0E">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Bedside Telephone Number</comment>
+<generatorID>82440A8C-DE7B-8039-5D02-EB454F9FF1C5</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bed_Type" id="46887D3E-E587-9555-BBA2-AB0B13DD76C4">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<comment>Type of Bed</comment>
+<generatorID>F88CBCA9-B3D2-2A52-4BCA-E1DD81A75E9E</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B79DFDCB-53E9-79E0-3CE7-F04F4C95F912" name="BED_PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>F8B4B580-F6F6-4FA9-FBAC-34CE340F7B27</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19E0945A-4776-844B-92CC-827860154581"/>
+<colUsage columnID="395D7EED-C5B5-8F98-4B86-055460C7FCB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85017EEE-5AE4-267C-E6B1-EB4EE7C4602B" name="WARD_BED">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-29 06:40:35 UTC</createdTime>
+<generatorID>0CB2EC60-8F95-3D0D-6157-D5DF477C8676</generatorID>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="395D7EED-C5B5-8F98-4B86-055460C7FCB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

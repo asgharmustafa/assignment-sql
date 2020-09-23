@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB2A3430-6F32-0857-CBD4-B2CB33F3E8C7" name="DOCTOR">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 06:00:34 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DoctorID" id="F5210B89-3DE4-7401-FBDC-DBE847D63BDA">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 06:02:32 UTC</createdTime>
+<comment>Supervising DoctorID</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="true"/>
+</engineerTo>
+<constraintName>Doctor ID check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="DoctorID&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Doctor_Name" id="3B1150DF-87BC-2D67-D876-6A1655DADD5C">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 06:08:27 UTC</createdTime>
+<comment>Supervising Doctor Name</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Phone_Number" id="A1910EC5-4FC7-6984-A42E-5435DF8BFC45">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 06:31:00 UTC</createdTime>
+<comment>Phone Number of the Supervising doctor</comment>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B8643F0A-6267-1165-DAE0-0630E28C4A1F" name="DOCTOR PK">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-25 06:32:24 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DC4DA132-BD3E-1675-F877-C9025AADCC52" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F5210B89-3DE4-7401-FBDC-DBE847D63BDA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

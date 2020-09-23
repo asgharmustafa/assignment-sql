@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BED_BED_ALLOCATION" directorySegmentName="seg_0" id="BB88A149-90D4-4E4F-24E6-F8022EFB7631">
+<createdBy>Asghar Mustafa</createdBy>
+<createdTime>2019-04-27 07:50:20 UTC</createdTime>
+<ownerDesignName>mh_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="C6979A77-483A-BAD0-4B44-DD3ECE629ECD" value="true"/>
+</engineerTo>
+<sourcePk>F8B4B580-F6F6-4FA9-FBAC-34CE340F7B27</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>associated with</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BA745124-E416-798C-2093-B17C292B2EA4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>91E146F8-914E-EF0F-8D21-0AA9115D7B5D</targetEntity>
+<transferable>true</transferable>
+</Relation>
